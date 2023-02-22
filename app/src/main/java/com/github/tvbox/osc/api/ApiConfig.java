@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://freed.yuanhsing.cf/TVBox/meowcf.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://piaoyuwang.gicp.net:5002/meowcf.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
